@@ -19,14 +19,14 @@ class SocialMedia extends Component {
             /Link> <
             div className = "social-media-projects-display" >
             <
-            div className = "social-media-project-1" >
+            div className = "social-media-project-1-online" >
             <
             a href = "//"
             className = "go-link" >
             <
             FaGithub className = "view-icon" / > { ' ' } <
             /a> <
-            a href = "//"
+            a href = "https://nxtwatchHemanth.ccbp.tech"
             className = "go-link" >
             <
             FaChrome className = "view-icon" / > { ' ' } <
@@ -37,14 +37,14 @@ class SocialMedia extends Component {
             MdOutlineDescription className = "view-icon" / > { ' ' } <
             /a> <
             /div> <
-            div className = "social-media-project-2" >
+            div className = "social-media-project-2-online" >
             <
             a href = "//"
             className = "go-link" >
             <
             FaGithub className = "view-icon" / > { ' ' } <
             /a> <
-            a href = "//"
+            a href = "https://hemanthsNetflix.ccbp.tech"
             className = "go-link" >
             <
             FaChrome className = "view-icon" / > { ' ' } <
@@ -55,32 +55,14 @@ class SocialMedia extends Component {
             MdOutlineDescription className = "view-icon" / > { ' ' } <
             /a> <
             /div> <
-            div className = "social-media-project-3" >
+            div className = "social-media-project-3-online" >
             <
             a href = "//"
             className = "go-link" >
             <
             FaGithub className = "view-icon" / > { ' ' } <
             /a> <
-            a href = "//"
-            className = "go-link" >
-            <
-            FaChrome className = "view-icon" / > { ' ' } <
-            /a> <
-            a href = "//"
-            className = "go-link" >
-            <
-            MdOutlineDescription className = "view-icon" / > { ' ' } <
-            /a> <
-            /div> <
-            div className = "social-media-project-4" >
-            <
-            a href = "//"
-            className = "go-link" >
-            <
-            FaGithub className = "view-icon" / > { ' ' } <
-            /a> <
-            a href = "//"
+            a href = "https://jobAppHemanth.ccbp.tech"
             className = "go-link" >
             <
             FaChrome className = "view-icon" / > { ' ' } <

@@ -1,7 +1,6 @@
 import './index.css'
 import { Link } from 'react-router'
 import { Component } from 'react'
-import { FaFacebook } from 'react-icons/fa'
 import { FaTwitter } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
@@ -9,12 +8,24 @@ import { IoIosSend } from 'react-icons/io'
 import { FaPhoneAlt } from 'react-icons/fa'
 import { FaHeart } from 'react-icons/fa'
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import emailjs from '@emailjs/browser'
 
 class Body extends Component {
     state = {
         isSkillsActive: true,
         isEducationActive: false,
         isProjectsActive: false,
+        name: "",
+        text: "",
+        email: "",
+    }
+
+    onSubmitEmail = (event) => {
+        event.preventDefault()
+        emailjs.sendForm("service_frb03v7", "template_lejrec8", event.target, "LovmVOoUQXlEg_njp")
+        this.setState({ name: "", email: "", text: "" })
+        alert("Thank you For Contacting,Email sent")
     }
 
     onClickSkills = () => {
@@ -41,8 +52,20 @@ class Body extends Component {
         })
     }
 
+    onChangeName = (event) => {
+        this.setState({ name: event.target.value })
+    }
+
+    onChangeEmail = (event) => {
+        this.setState({ email: event.target.value })
+    }
+
+    onChangeText = (event) => {
+        this.setState({ text: event.target.value })
+    }
+
     render() {
-        const { isSkillsActive, isEducationActive, isProjectsActive } = this.state
+        const { isSkillsActive, isEducationActive, isProjectsActive, name, email, text } = this.state
         const skillClass = isSkillsActive ? 'activeSkill' : ''
         const educationClass = isEducationActive ? 'activeEducation' : ''
         const projectClass = isProjectsActive ? 'activeProject' : ''
@@ -53,39 +76,39 @@ class Body extends Component {
             id = "header" >
             <
             button className = "logo-btn" >
-            Web < span className = "logo-span" > Developer < /span> <
-            /button> <
+            Web < span className = "logo-span" > Developer < /span> < /
+            button > <
             ul className = "header-btns" >
             <
             li className = "list-btn" >
             <
             a href = "#header" >
             <
-            button className = "nav-btn" > Home < /button> <
-            /a> <
+            button className = "nav-btn" > Home < /button> < /
+            a > <
             /li> <
             li className = "list-btn" >
             <
             a href = "#about" >
             <
-            button className = "nav-btn" > About < /button> <
-            /a> <
+            button className = "nav-btn" > About < /button> < /
+            a > <
             /li> <
             li className = "list-btn" >
             <
             a href = "#portfolio" >
             <
-            button className = "nav-btn" > Portfolio < /button> <
-            /a> <
+            button className = "nav-btn" > Portfolio < /button> < /
+            a > <
             /li> <
             li className = "list-btn" >
             <
             a href = "#contact" >
             <
-            button className = "nav-btn" > Contact < /button> <
-            /a> <
-            /li> <
-            /ul> <
+            button className = "nav-btn" > Contact < /button> < /
+            a > <
+            /li> < /
+            ul > <
             /nav> <
             div className = "body-container" >
             <
@@ -93,9 +116,9 @@ class Body extends Component {
             <
             p > I 'M</p> <
             h1 > HEMANTH < /h1> <
-            h3 > -I LIKE TO BUILD WEBSITES < /h3> <
-            /div> <
-            img src = "https://res.cloudinary.com/darsfmavs/image/upload/v1743099795/rubqv4xfuegbrmwo8jll.png"
+            h3 > -I LIKE TO BUILD WEBSITES < /h3> < /
+            div > <
+            img src = "https://res.cloudinary.com/do2qll3mj/image/upload/v1743262085/vyaewcgzxideuzffo7m7.png"
             className = "body-png"
             alt = "WEB DEVELOPMENT" /
             >
@@ -133,8 +156,8 @@ class Body extends Component {
             type = "button"
             onClick = { this.onClickProjects } >
             Projects <
-            /button> <
-            /div> {
+            /button> < /
+            div > {
                 isSkillsActive && ( <
                     p className = "skill-set" > FULL STACK WEB DEVELOPMENT < /p>
                 )
@@ -179,8 +202,8 @@ class Body extends Component {
                     UI / UX Design Tools: { ' ' } <
                     /span>
                     Figma, Photoshop <
-                    /p> <
-                    /div> <
+                    /p> < /
+                    div > <
                     /div>
                 )
             } {
@@ -192,31 +215,31 @@ class Body extends Component {
                     <
                     p className = "education" > CCBP Next Wave Program < /p> <
                     p className = "education-time-1" > 2024 - present < /p> <
-                    p className = "grade" > 100 % < /p> <
-                    /div> <
+                    p className = "grade" > 100 % < /p> < /
+                    div > <
                     div className = "education-item" >
                     <
                     p className = "education" > Bachelor of Technology(B.Tech) < /p> <
                     p className = "education-time" > 2020 - 2024 < /p> <
-                    p className = "grade" > 78 % < /p> <
-                    /div> <
+                    p className = "grade" > 78 % < /p> < /
+                    div > <
                     div className = "education-item" >
                     <
                     p className = "education" > Intermediate(11 th & 12 th) < /p> <
                     p className = "education-time-1" > 2018 - 2020 < /p> <
-                    p className = "grade" > 98 % < /p> <
-                    /div> <
+                    p className = "grade" > 98 % < /p> < /
+                    div > <
                     div className = "education-item" >
                     <
                     p className = "education" > 10 th standard < /p> <
                     p className = "education-time-2" > 2017 - 2018 < /p> <
-                    p className = "grade" > 96 % < /p> <
-                    /div> <
+                    p className = "grade" > 96 % < /p> < /
+                    div > <
                     /div>
                 )
             } <
-            /div> <
-            /div> <
+            /div> < /
+            div > <
             div className = "portfolio-container"
             id = "portfolio" >
             <
@@ -225,7 +248,7 @@ class Body extends Component {
             <
             div className = "work" >
             <
-            img src = "https://res.cloudinary.com/darsfmavs/image/upload/v1743099871/uf7ja9caa71xlhbnnol4.png"
+            img src = "https://res.cloudinary.com/do2qll3mj/image/upload/v1743252840/twzjdbae6otib5bige4i.jpg"
             alt = "my work"
             className = "work-png" /
             >
@@ -241,33 +264,33 @@ class Body extends Component {
             <
             FaExternalLinkAlt className = "link-icon" / >
             <
-            /Link> <
-            /div> <
+            /Link> < /
+            div > <
             /div> <
             div className = "work" >
             <
-            img src = "https://res.cloudinary.com/darsfmavs/image/upload/v1743099982/jmw1mmmjf8opajnmtrk0.png"
+            img src = "https://res.cloudinary.com/do2qll3mj/image/upload/v1743250890/grkebew66zknnwzp3qcl.jpg"
             alt = "my work"
             className = "work-png" /
             >
             <
             div className = "layer" >
             <
-            h2 className = "work-text" > Music Apps < /h2> <
+            h2 className = "work-text" > React Js Games < /h2> <
             p className = "work-description" >
-            The app connects you to the different songs & music around the world <
+            The app connects you to the different Games that are build with react js. <
             /p> <
             Link to = "/musicapps"
             className = "link-x" >
             <
             FaExternalLinkAlt className = "link-icon" / >
             <
-            /Link> <
-            /div> <
+            /Link> < /
+            div > <
             /div> <
             div className = "work" >
             <
-            img src = "https://res.cloudinary.com/darsfmavs/image/upload/v1743099997/fl454gvn9rsvvvymctb3.png"
+            img src = "https://res.cloudinary.com/do2qll3mj/image/upload/v1743252825/neziogx9xvg7jnzldzbd.jpg"
             alt = "my work"
             className = "work-png" /
             >
@@ -283,12 +306,12 @@ class Body extends Component {
             <
             FaExternalLinkAlt className = "link-icon" / >
             <
-            /Link> <
-            /div> <
+            /Link> < /
+            div > <
             /div> <
             div className = "work" >
             <
-            img src = "https://res.cloudinary.com/darsfmavs/image/upload/v1743100015/wo77jgn8kwey2in2el1l.avif"
+            img src = "https://res.cloudinary.com/do2qll3mj/image/upload/v1743252853/wxw1z1x9fbqzw3skyvft.jpg"
             alt = "my work"
             className = "work-png" /
             >
@@ -304,12 +327,12 @@ class Body extends Component {
             <
             FaExternalLinkAlt className = "link-icon" / >
             <
-            /Link> <
-            /div> <
+            /Link> < /
+            div > <
             /div> <
             div className = "work" >
             <
-            img src = "https://res.cloudinary.com/darsfmavs/image/upload/v1743100153/jqvi1fzdajzk59dfwbf0.avif"
+            img src = "https://res.cloudinary.com/do2qll3mj/image/upload/v1743252882/uym8bszcedzopk2duqty.jpg"
             alt = "my work"
             className = "work-png" /
             >
@@ -325,8 +348,8 @@ class Body extends Component {
             <
             FaExternalLinkAlt className = "link-icon" / >
             <
-            /Link> <
-            /div> <
+            /Link> < /
+            div > <
             /div> <
             div className = "work" >
             <
@@ -347,10 +370,10 @@ class Body extends Component {
             <
             FaExternalLinkAlt className = "link-icon" / >
             <
-            /a> <
-            /div> <
-            /div> <
-            /div> <
+            /a> < /
+            div > <
+            /div> < /
+            div > <
             /div> <
             div className = "contact"
             id = "contact" >
@@ -378,70 +401,77 @@ class Body extends Component {
             /p> <
             div className = "social-icons" >
             <
-            a href = "//"
+            a href = "https://github.com/Hemanthsure123"
             className = "social-media-icon" >
             <
-            FaFacebook / >
+            FaGithub / >
             <
             /a> <
-            a href = "//"
+            a href = "https://x.com/HemanthSir59604"
             className = "social-media-icon" >
             <
             FaTwitter / >
             <
             /a> <
-            a href = "//"
+            a href = "https://www.instagram.com/sure_hemanth/?next=%2F&hl=en"
             className = "social-media-icon" >
             <
             FaInstagram / >
             <
             /a> <
-            a href = "//"
+            a href = "https://www.linkedin.com/in/hemanth-sure/"
             className = "social-media-icon" >
             <
             FaLinkedin / >
             <
-            /a> <
-            /div> <
+            /a> < /
+            div > <
             a href = "google.com"
             download className = "btn btn2" >
             Download CV <
-            /a> <
-            /div> <
+            /a> < /
+            div > <
             div className = "contact-right" >
             <
-            form >
+            form onSubmit = { this.onSubmitEmail } >
             <
             input type = "text"
-            name = "Name"
+            name = "name"
             placeholder = "Your Name"
+            onChange = { this.onChangeName }
+            value = { name }
             required / >
             <
             input type = "email"
             name = "email"
+            onChange = { this.onChangeEmail }
+            value = { email }
             placeholder = "Your Email"
             required /
             >
             <
-            textarea name = "Message"
+            textarea name = "message"
             rows = "6"
+            onChange = { this.onChangeText }
+            value = { text }
             placeholder = "Your Message" >
-            < /textarea> <
+            <
+            /textarea> <
             button type = "submit"
             className = "btn btn2" >
             Submit <
-            /button> <
-            /form> <
-            /div> <
-            /div> <
+            /button> < /
+            form > <
+            /div> < /
+            div > <
             footer className = "footer" >
             <
             p className = "footer-content" > -- - Made With < /p>{' '} <
             FaHeart className = "heart-icon" / >
             -- -
             <
-            /footer> <
-            /div>
+            /footer> < /
+            div >
         )
     }
 }
