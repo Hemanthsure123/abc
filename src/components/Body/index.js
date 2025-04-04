@@ -15,7 +15,6 @@ class Body extends Component {
     state = {
         isSkillsActive: true,
         isEducationActive: false,
-        isProjectsActive: false,
         name: "",
         text: "",
         email: "",
@@ -44,13 +43,7 @@ class Body extends Component {
         })
     }
 
-    onClickProjects = () => {
-        this.setState({
-            isSkillsActive: false,
-            isEducationActive: false,
-            isProjectsActive: true,
-        })
-    }
+
 
     onChangeName = (event) => {
         this.setState({ name: event.target.value })
@@ -65,10 +58,9 @@ class Body extends Component {
     }
 
     render() {
-        const { isSkillsActive, isEducationActive, isProjectsActive, name, email, text } = this.state
+        const { isSkillsActive, isEducationActive, name, email, text } = this.state
         const skillClass = isSkillsActive ? 'activeSkill' : ''
         const educationClass = isEducationActive ? 'activeEducation' : ''
-        const projectClass = isProjectsActive ? 'activeProject' : ''
         return ( <
             div className = "main-div" >
             <
@@ -151,11 +143,6 @@ class Body extends Component {
             type = "button"
             onClick = { this.onClickEducation } >
             Education <
-            /button> <
-            button className = { `about-btn ${projectClass}` }
-            type = "button"
-            onClick = { this.onClickProjects } >
-            Projects <
             /button> < /
             div > {
                 isSkillsActive && ( <
@@ -341,7 +328,7 @@ class Body extends Component {
             <
             h2 className = "work-text" > Minor Projects Show Case < /h2> <
             p className = "work-description" >
-            Projects are minor But helps in all major issues <
+            Minor projects includes small web apps, Authentication Apps <
             /p> <
             Link to = "/minorprojects"
             className = "link-x" >
@@ -426,7 +413,7 @@ class Body extends Component {
             <
             /a> < /
             div > <
-            a href = "google.com"
+            a href = "https://drive.google.com/file/d/1bJRhzDU3DWdUjKOZlf5NqYnloCBNg5Pc/view"
             download className = "btn btn2" >
             Download CV <
             /a> < /

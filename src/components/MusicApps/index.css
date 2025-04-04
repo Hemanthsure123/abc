@@ -1,6 +1,5 @@
 .social-media-container {
     height: 100vh;
-    width: 100vw;
     overflow-y: auto;
     background-image: linear-gradient(to bottom, #f0f2f0, #000c40);
     display: flex;
@@ -22,7 +21,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
+    width: 95%;
 }
 
 .social-media-project-1-game {
@@ -170,4 +169,17 @@
 .social-media-project-6-game:hover {
     transform: translateY(-10px);
     transform: scale(1.1);
+}
+
+.user-password-details {
+    margin-left: auto;
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    height: 40px;
+    padding: 12px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: 1px solid #f0f2f0;
 }

@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
+    width: 95%;
     margin: auto;
 }
 
@@ -129,4 +129,17 @@
 .social-media-project-3-shopping:hover {
     transform: translateY(-10px);
     transform: scale(1.1);
+}
+
+.user-password-details {
+    margin-left: auto;
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    height: 40px;
+    padding: 12px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: 1px solid #f0f2f0;
 }

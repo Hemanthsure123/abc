@@ -1,131 +1,145 @@
 .social-media-container {
-  height: 100vh;
-  overflow-y: auto;
-  background-image: linear-gradient(to bottom, #f0f2f0, #000c40);
-  display: flex;
-  flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    background-image: linear-gradient(to bottom, #f0f2f0, #000c40);
+    display: flex;
+    flex-direction: column;
 }
 
 .back-arrow {
-  color: #000c40;
-  width: 100px;
-  height: 100px;
-  font-size: 50px;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  background-color: transparent;
+    color: #000c40;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
 }
 
 .social-media-projects-display {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
 }
 
-.social-media-project-1 {
-  width: 400px;
-  height: 400px;
-  margin: 30px;
-  border: 0px;
-  outline: none;
-  border-radius: 10px;
-  background-image: url('https://res.cloudinary.com/darsfmavs/image/upload/v1743100393/ou2jdjnybzkadsdxr2sx.png');
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-evenly;
-  background-size: cover;
-  background-repeat: no-repeat;
+.social-media-project-1-minor {
+    width: 400px;
+    height: 400px;
+    margin: 30px;
+    border: 0px;
+    outline: none;
+    border-radius: 10px;
+    background-image: url('https://res.cloudinary.com/do2qll3mj/image/upload/v1743749322/6333204_xzdfyo.jpg');
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.social-media-project-2 {
-  width: 400px;
-  height: 400px;
-  border: 0px;
-  margin: 30px;
-  outline: none;
-  border-radius: 10px;
-  background-image: url('https://res.cloudinary.com/darsfmavs/image/upload/v1743100352/khzwsl5cjdozjjg5xxzt.png');
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-evenly;
-  background-size: cover;
-  background-repeat: no-repeat;
+.social-media-project-2-minor {
+    width: 400px;
+    height: 400px;
+    border: 0px;
+    margin: 30px;
+    outline: none;
+    border-radius: 10px;
+    background-image: url('https://res.cloudinary.com/do2qll3mj/image/upload/v1743749371/4004529_ofhimt.jpg');
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.social-media-project-3 {
-  width: 400px;
-  height: 400px;
-  border: 0px;
-  margin: 30px;
-  outline: none;
-  border-radius: 10px;
-  background-image: url('https://res.cloudinary.com/darsfmavs/image/upload/v1743100364/x5fuct6i8elar6aarijn.png');
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-evenly;
-  background-size: cover;
-  background-repeat: no-repeat;
+.social-media-project-3-minor {
+    width: 400px;
+    height: 400px;
+    border: 0px;
+    margin: 30px;
+    outline: none;
+    border-radius: 10px;
+    background-image: url('https://res.cloudinary.com/do2qll3mj/image/upload/v1743749411/3896559_jmbz2v.jpg');
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.social-media-project-4 {
-  width: 400px;
-  height: 400px;
-  border: 0px;
-  margin: 30px;
-  outline: none;
-  border-radius: 10px;
-  background-image: url('https://res.cloudinary.com/darsfmavs/image/upload/v1743100383/eameyaucjmchrvbdfsft.png');
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-evenly;
-  background-size: cover;
-  background-repeat: no-repeat;
+.social-media-project-4-minor {
+    width: 400px;
+    height: 400px;
+    border: 0px;
+    margin: 30px;
+    outline: none;
+    border-radius: 10px;
+    background-image: url('https://res.cloudinary.com/do2qll3mj/image/upload/v1743749503/262517-P5AAPC-731_afvpd8.jpg');
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .view-icon {
-  width: 40px;
-  height: 40px;
-  color: gray;
+    width: 40px;
+    height: 40px;
+    color: gray;
 }
 
 .go-link {
-  width: 40px;
-  height: 40px;
-  margin: 20px;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
 }
 
 .go-link:hover {
-  color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: black;
-  transform: translateY(-5px);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    transform: translateY(-5px);
 }
 
-.social-media-project-1:hover {
-  transform: translateY(-10px);
-  transform: scale(1.1);
+.social-media-project-1-minor:hover {
+    transform: translateY(-10px);
+    transform: scale(1.1);
 }
 
-.social-media-project-2:hover {
-  transform: translateY(-10px);
-  transform: scale(1.1);
+.social-media-project-2-minor:hover {
+    transform: translateY(-10px);
+    transform: scale(1.1);
 }
 
-.social-media-project-3:hover {
-  transform: translateY(-10px);
-  transform: scale(1.1);
+.social-media-project-3-minor:hover {
+    transform: translateY(-10px);
+    transform: scale(1.1);
 }
 
-.social-media-project-4:hover {
-  transform: translateY(-10px);
-  transform: scale(1.1);
+.social-media-project-4-minor:hover {
+    transform: translateY(-10px);
+    transform: scale(1.1);
+}
+
+.user-password-details {
+    margin-left: auto;
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    height: 40px;
+    padding: 12px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: 1px solid #f0f2f0;
 }

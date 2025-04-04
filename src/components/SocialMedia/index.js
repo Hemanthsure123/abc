@@ -5,7 +5,6 @@ import { Component } from 'react'
 import { IoMdArrowRoundBack } from 'react-icons/io'
 import { FaGithub } from 'react-icons/fa'
 import { FaChrome } from 'react-icons/fa'
-import { MdOutlineDescription } from 'react-icons/md'
 
 class SocialMedia extends Component {
     render() {
@@ -15,8 +14,8 @@ class SocialMedia extends Component {
             Link to = "/" > { ' ' } <
             button className = "back-arrow" > { ' ' } <
             IoMdArrowRoundBack / > { ' ' } <
-            /button> <
-            /Link> <
+            /button> < /
+            Link > <
             div className = "social-media-projects-display" >
             <
             div className = "social-media-project-1-online" >
@@ -30,13 +29,8 @@ class SocialMedia extends Component {
             className = "go-link" >
             <
             FaChrome className = "view-icon" / > { ' ' } <
-            /a> <
-            a href = "//"
-            className = "go-link" >
-            <
-            MdOutlineDescription className = "view-icon" / > { ' ' } <
-            /a> <
-            /div> <
+            /a>  < /
+            div > <
             div className = "social-media-project-2-online" >
             <
             a href = "//"
@@ -48,13 +42,8 @@ class SocialMedia extends Component {
             className = "go-link" >
             <
             FaChrome className = "view-icon" / > { ' ' } <
-            /a> <
-            a href = "//"
-            className = "go-link" >
-            <
-            MdOutlineDescription className = "view-icon" / > { ' ' } <
-            /a> <
-            /div> <
+            /a>  < /
+            div > <
             div className = "social-media-project-3-online" >
             <
             a href = "//"
@@ -66,15 +55,12 @@ class SocialMedia extends Component {
             className = "go-link" >
             <
             FaChrome className = "view-icon" / > { ' ' } <
-            /a> <
-            a href = "//"
-            className = "go-link" >
-            <
-            MdOutlineDescription className = "view-icon" / > { ' ' } <
-            /a> <
+            /a>  < /
+            div > <
             /div> <
-            /div> <
-            /div>
+            p className = 'user-password-details' > * Enter USERNAME: rahul, PASSWORD: rahul @2021(If in
+                case any user details asked) < /p>  < /
+            div >
         )
     }
 }
