@@ -414,7 +414,7 @@ class Body extends Component {
             /a> < /
             div > <
             a href = "https://drive.google.com/file/d/1bJRhzDU3DWdUjKOZlf5NqYnloCBNg5Pc/view"
-            download className = "btn btn2" >
+            className = "btn btn2" >
             Download CV <
             /a> < /
             div > <
